@@ -1,0 +1,33 @@
+
+=== RUN MODE: PARALLEL | MaxDegreeOfParallelism=4 ===
+[ParallelAndTimeoutTests.TimeoutDemo case #1] TIMEOUT: Execution exceeded timeout (500 ms). | 508 ms | Thread #9
+[Test.SharedContext_ContainsTodoService case #1] PASSED | 0 ms | Thread #7
+[Test.Test_CreateTodo_ValidData case #1] PASSED | 54 ms | Thread #7
+[Test.Test_CreateTodo_DifferentData case #1] PASSED | 57 ms | Thread #7
+[Test.Test_CreateTodo_DifferentData case #2] PASSED | 64 ms | Thread #7
+[Test.Test_CreateTodo_DifferentData case #3] PASSED | 63 ms | Thread #10
+[Test.Test_CreateTodo_Empty_Title case #1] PASSED | 0 ms | Thread #4
+[Test.Test_CreateTodo_TitleWithBigLenght case #1] PASSED | 0 ms | Thread #4
+[Test.CompleteTodo_ExistingTodo_UpdatesStatusAndCompletedAt case #1] PASSED | 120 ms | Thread #4
+[Test.CompleteTodo_NonExistentTodo_ThrowsException case #1] PASSED | 1 ms | Thread #4
+[Test.CompleteTodo_AlreadyCompletedTodo_ThrowsException case #1] PASSED | 114 ms | Thread #4
+[ParallelAndTimeoutTests.SlowTestC case #1] PASSED | 1013 ms | Thread #8
+[ParallelAndTimeoutTests.SlowTestA case #1] PASSED | 1016 ms | Thread #7
+[ParallelAndTimeoutTests.SlowTestB case #1] PASSED | 1016 ms | Thread #4
+[Test.UpdateStatus_ChangesStatus case #1] PASSED | 53 ms | Thread #4
+[Test.UpdateDescription_ChangesDescription case #1] PASSED | 55 ms | Thread #10
+[Test.UpdateStatus_CompletedTodo_ThrowsException case #1] PASSED | 120 ms | Thread #7
+[Test.GetTodosByStatus_ReturnsCorrectTodos case #1] PASSED | 183 ms | Thread #9
+[Test.SearchTodos_ByKeyword_ReturnsMatchingTodos case #1] PASSED | 184 ms | Thread #4
+[Test.DeleteTodo_NonExistentTodo_ThrowsException case #1] PASSED | 1 ms | Thread #11
+[Test.SearchTodos_EmptyKeyword_ReturnsAllTodos case #1] PASSED | 192 ms | Thread #10
+[Test.GetOverdueTodos_ReturnsOverdueTodos case #1] PASSED | 180 ms | Thread #7
+[Test.DeleteTodo_ExistingTodo_RemovesTodo case #1] PASSED | 116 ms | Thread #9
+[Test.DeleteTodo_CompletedTodo_ThrowsException case #1] PASSED | 107 ms | Thread #11
+[Test.RescheduleDueDate_ToPastDate_MarksOverdue case #1] PASSED | 92 ms | Thread #8
+[Test.CloneTodo_CreatesCopyWithSuffix case #1] PASSED | 170 ms | Thread #12
+[Test.CreateTodoAsync_ValidData_ReturnsPendingTodo case #1] PASSED | 76 ms | Thread #8
+[Test.GetStatistics_ReturnsCorrectCounts case #1] PASSED | 351 ms | Thread #10
+[Test.CompleteTodoAsync_ExistingTodo_UpdatesCompletionFields case #1] PASSED | 129 ms | Thread #12
+[Test.CleanupCompletedTodos_RemovesAllCompleted case #1] PASSED | 355 ms | Thread #9
+Elapsed: 1682 ms
